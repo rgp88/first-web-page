@@ -11,7 +11,26 @@ body {
 li {
     text-align: none;
     list-style: none;
+    text-decoration: none;
 }
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+a:active {
+    text-decoration: underline;
+    color: white;
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -45,9 +64,9 @@ li {
     padding: 10px 200px;
 }
 .bodyoneone {
-    width: 500px;
     height: 250px;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
 
@@ -64,7 +83,7 @@ li {
     font-family: sans-serif;
     color: #E5E7EB;
 }
-button {
+.bodyone button {
     width: 100px;
     height: 40px;
     border-radius: 10px;
@@ -72,7 +91,7 @@ button {
 }
 .bodyonetwo {
     display: flex;
-    width: 500px;
+    flex: 1;
     height: 250px;
     background-color: #585a5e;
     justify-content: center;
@@ -85,12 +104,17 @@ button {
     align-items: center;
     padding: 50px 200px;
     gap: 60px;
+    text-align: center;
 }
 .bodytwo h2 {
     font-size: 36px;
     font-weight: 900;
     font-family: sans-serif;
     color: #1F2937;
+}
+.bodytwo p {
+    font-family: sans-serif;
+    color:#585a5e;
 }
 .bodytwotwo {
     display: flex;
@@ -101,7 +125,7 @@ button {
     width: 160px;
 }
 .twotwoone div {
-    border: 2px solid #1f2937;
+    border: 4px solid #79a2db;
     height: 160px;
     width: 160px;
     border-radius: 10px;
@@ -110,11 +134,71 @@ button {
 .bodythree {
     height: 430px;
     background-color: #E5E7EB;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 300px;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMatemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.para {
+    font-weight: 100;
+    font-style: italic;
+    color: #1f2937;
+}
+.paratitle {
+    align-self: flex-end;
+    color: #1f2937;
+    font-weight: bold;
 }
 .bodyfour {
     height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 200px;
 }
-
+.bodyfourone {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882F6;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    height: 150px;
+    width: 100%;
+}
+.bodyfourone h3 {
+    color: #E5E7EB;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.bodyfourone p {
+    color: #E5E7EB;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.bodyfour button {
+    background-color: #3882F6;
+    border:2px solid white;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.bodyfour button:hover {
+    background-color: white;
+    color: #3882F6;
+    border: 2px solid #3882F6;
+}
+.bodyfour button:active {
+    background-color: #1f2937;
+    color: white
+}
 .footer {
     display: flex;
     justify-content: center;
